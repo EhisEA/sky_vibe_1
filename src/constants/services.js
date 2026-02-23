@@ -11,6 +11,7 @@ import {
   FaFire,
   FaWater,
   FaPaintRoller,
+  FaIndustry,
 } from 'react-icons/fa';
 
 export const services = [
@@ -192,6 +193,21 @@ export const services = [
       'Fixture and fitting cleaning',
       'Air vent and duct cleaning',
       'Final quality inspection',
+    ],
+  },
+  {
+    slug: 'industrial-cleaning',
+    title: 'Industrial Cleaning',
+    description:
+      'Heavy-duty cleaning solutions for factories, warehouses, and industrial facilities, ensuring compliance with health and safety regulations.',
+    icon: FaIndustry,
+    features: [
+      'Factory and warehouse floor cleaning',
+      'Heavy machinery and equipment degreasing',
+      'High-pressure washing and steam cleaning',
+      'Hazardous waste removal and disposal',
+      'Ventilation and duct system cleaning',
+      'Health and safety compliance standards',
     ],
   },
 ];
