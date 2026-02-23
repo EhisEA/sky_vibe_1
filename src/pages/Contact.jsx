@@ -96,8 +96,7 @@ export default function Contact() {
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-2xl font-heading font-bold text-gray-900 mb-6">
@@ -216,9 +215,8 @@ export default function Contact() {
             {/* Contact Info */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
             >
               <h2 className="text-2xl font-heading font-bold text-gray-900 mb-6">
                 Contact Information

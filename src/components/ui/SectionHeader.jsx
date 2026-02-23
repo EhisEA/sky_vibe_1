@@ -4,8 +4,7 @@ export default function SectionHeader({ title, subtitle, centered = true, light 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className={`mb-10 md:mb-14 ${centered ? 'text-center' : ''}`}
     >

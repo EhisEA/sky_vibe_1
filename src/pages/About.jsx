@@ -66,8 +66,7 @@ export default function About() {
             />
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="prose prose-lg mx-auto text-gray-600 space-y-4"
             >
@@ -102,8 +101,7 @@ export default function About() {
           />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="max-w-3xl mx-auto bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-gray-100"
           >
@@ -132,8 +130,7 @@ export default function About() {
                 <motion.div
                   key={value.title}
                   initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="text-center"
                 >

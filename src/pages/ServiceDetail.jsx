@@ -70,8 +70,7 @@ export default function ServiceDetail() {
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
               <p className="text-lg text-gray-600 leading-relaxed mb-10">
@@ -86,8 +85,7 @@ export default function ServiceDetail() {
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: i * 0.05 }}
                     className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg"
                   >
@@ -100,9 +98,6 @@ export default function ServiceDetail() {
               <div className="flex flex-wrap gap-4">
                 <Button to="/contact" variant="primary" size="lg">
                   Get a Quote for {service.title}
-                </Button>
-                <Button to="/contact" variant="outline" size="lg">
-                  Contact Us
                 </Button>
               </div>
             </motion.div>
