@@ -101,8 +101,8 @@ export default function ServiceDetail() {
                 <Button to="/contact" variant="primary" size="lg">
                   Get a Quote for {service.title}
                 </Button>
-                <Button to="/pricing" variant="outline" size="lg">
-                  View Pricing
+                <Button to="/contact" variant="outline" size="lg">
+                  Contact Us
                 </Button>
               </div>
             </motion.div>

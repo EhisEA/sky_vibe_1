@@ -6,7 +6,6 @@ const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Services = lazy(() => import('./pages/Services'));
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
-const Pricing = lazy(() => import('./pages/Pricing'));
 const Reviews = lazy(() => import('./pages/Reviews'));
 const FAQ = lazy(() => import('./pages/FAQ'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -30,7 +29,6 @@ export default function App() {
             <Route path="about" element={<About />} />
             <Route path="services" element={<Services />} />
             <Route path="services/:slug" element={<ServiceDetail />} />
-            <Route path="pricing" element={<Pricing />} />
             <Route path="reviews" element={<Reviews />} />
             <Route path="faq" element={<FAQ />} />
             <Route path="contact" element={<Contact />} />
