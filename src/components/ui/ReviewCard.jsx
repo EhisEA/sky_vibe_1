@@ -1,7 +1,7 @@
 import { FaStar, FaQuoteLeft } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-export default function TestimonialCard({ testimonial, index = 0 }) {
+export default function ReviewCard({ testimonial, index = 0 }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}

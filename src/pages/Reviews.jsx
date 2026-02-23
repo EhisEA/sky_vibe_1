@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '../components/ui/SectionHeader';
-import TestimonialCard from '../components/ui/TestimonialCard';
+import ReviewCard from '../components/ui/ReviewCard';
 import CTABanner from '../components/sections/CTABanner';
-import { testimonials } from '../constants/testimonials';
+import { reviews } from '../constants/reviews';
 
-export default function Testimonials() {
+export default function Reviews() {
   useEffect(() => {
-    document.title = 'Testimonials | Sky Vibes Cleaning Services Ltd';
+    document.title = 'Reviews | Sky Vibes Cleaning Services Ltd';
   }, []);
 
   return (
@@ -21,7 +21,7 @@ export default function Testimonials() {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-5xl font-heading font-bold text-white mb-4"
           >
-            Customer Testimonials
+            Customer Reviews
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* All Testimonials */}
+      {/* All Reviews */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container-custom">
           <SectionHeader
@@ -42,10 +42,10 @@ export default function Testimonials() {
             subtitle="We're proud of the relationships we've built and the results we've delivered."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard
-                key={testimonial.id}
-                testimonial={testimonial}
+            {reviews.map((review, index) => (
+              <ReviewCard
+                key={review.id}
+                testimonial={review}
                 index={index}
               />
             ))}

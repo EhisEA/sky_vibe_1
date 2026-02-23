@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Hero from '../components/sections/Hero';
 import ServicesOverview from '../components/sections/ServicesOverview';
 import WhyChooseUs from '../components/sections/WhyChooseUs';
-import QuickTestimonials from '../components/sections/QuickTestimonials';
+import QuickReviews from '../components/sections/QuickReviews';
 import CTABanner from '../components/sections/CTABanner';
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <ServicesOverview />
       <WhyChooseUs />
-      <QuickTestimonials />
+      <QuickReviews />
       <CTABanner />
     </>
   );

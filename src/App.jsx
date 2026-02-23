@@ -7,7 +7,7 @@ const About = lazy(() => import('./pages/About'));
 const Services = lazy(() => import('./pages/Services'));
 const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
 const Pricing = lazy(() => import('./pages/Pricing'));
-const Testimonials = lazy(() => import('./pages/Testimonials'));
+const Reviews = lazy(() => import('./pages/Reviews'));
 const FAQ = lazy(() => import('./pages/FAQ'));
 const Contact = lazy(() => import('./pages/Contact'));
 const NotFound = lazy(() => import('./pages/NotFound'));
@@ -31,7 +31,7 @@ export default function App() {
             <Route path="services" element={<Services />} />
             <Route path="services/:slug" element={<ServiceDetail />} />
             <Route path="pricing" element={<Pricing />} />
-            <Route path="testimonials" element={<Testimonials />} />
+            <Route path="reviews" element={<Reviews />} />
             <Route path="faq" element={<FAQ />} />
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

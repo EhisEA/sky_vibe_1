@@ -1,4 +1,4 @@
-export const testimonials = [
+export const reviews = [
   {
     id: 1,
     name: 'Sarah O\'Brien',
